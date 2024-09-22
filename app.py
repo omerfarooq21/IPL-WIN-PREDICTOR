@@ -17,7 +17,12 @@ with cy:
 
 
         
-model = pk.load(open('./ipl.pkl','rb'))
+try:
+    model = pk.load(open('./ipl.pkl', 'rb'))
+except FileNotFoundError:
+    st.error("Model file not found. Please ensure the 'ipl.pkl' file is in the correct directory.")
+except Exception as e:
+    st.error(f"An error occurred while loading the model: {e}")
 st.title("IPL WIN PREDICTOR")
 with st.form("my_form"):
     teams = ['Chennai Super Kings',

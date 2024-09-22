@@ -3,5 +3,5 @@ pandas
 scikit-learn
 pickle
 json
-streamlit
-streamlit-lottie 
+streamlit 
+streamlit-lottie

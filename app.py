@@ -17,7 +17,7 @@ with cy:
 
 
         
-model = pk.load(open('ipl.pkl','rb'))
+model = pk.load(open('./ipl.pkl','rb'))
 st.title("IPL WIN PREDICTOR")
 with st.form("my_form"):
     teams = ['Chennai Super Kings',

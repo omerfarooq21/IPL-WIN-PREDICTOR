@@ -1,5 +1,5 @@
 import streamlit as st
-import pickle as pt
+import pickle as pk
 import pandas as pd
 from streamlit_lottie import st_lottie
 import json
@@ -17,7 +17,7 @@ with cy:
 
 
         
-model = pt.load(open('ipl.pkl','rb'))
+model = pk.load(open('ipl.pkl','rb'))
 st.title("IPL WIN PREDICTOR")
 with st.form("my_form"):
     teams = ['Chennai Super Kings',

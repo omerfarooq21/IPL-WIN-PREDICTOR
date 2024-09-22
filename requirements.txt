@@ -1,6 +1,5 @@
 numpy
 pandas
-pickle
 json
 streamlit 
-streamlit_lottie
+streamlit-lottie
